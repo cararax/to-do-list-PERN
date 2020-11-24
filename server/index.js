@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json()); //req.body
 
 //Routes
-
 //Create a todo
 app.post('/todos', async (req, res) => {
     try {
@@ -45,7 +44,6 @@ app.get('/todos/:id', async (req, res) => {
 
         res.json(todo.rows[0])
 
-
     } catch (error) {
         console.log(error.message)
     }
@@ -73,12 +71,10 @@ app.delete('/todos/:id', async (req, res) => {
 
         res.json("Todo was deleted successfully.")
 
-
     } catch (error) {
         console.log(error.message)
     }
 })
-
 
 app.listen(5000, () => {
     console.log('Server has started listening on port 5000')
