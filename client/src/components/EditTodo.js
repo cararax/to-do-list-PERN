@@ -4,7 +4,6 @@ const EditTodo = ({ todo }) => {
 
     const [description, setDescription] = useState(todo.description)
 
-
     //Edit description function
 
     const updateDescription = async e => {
