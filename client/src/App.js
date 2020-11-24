@@ -4,7 +4,7 @@ import './App.css';
 
 //Components
 import InputTodo from './components/InputTodo'
-//import ListTodo from './components/ListTodo'
+import ListTodos from './components/ListTodos'
 //import EditTodo from './components/EditTodo'
 
 
@@ -13,6 +13,7 @@ function App() {
     <Fragment>
       <div className="container">
         <InputTodo></InputTodo>
+        <ListTodos></ListTodos>
 
       </div>
     </Fragment>
